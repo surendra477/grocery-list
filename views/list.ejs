@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="box" id="heading">
+    <h1><%= kindofday %></h1>
+    </div>
+    <div class="box">
+          <% for(var i=0; i < newlistitems.length; i++){ %>
+            <div class="item">
+                <input type="checkbox" >
+               <p><%= newlistitems[i] %></p>
+            </div>
+         <%  } %>
+        
+
+
+           <form class="" action="/" method="post">
+                  <input type="text" name="newitem">
+                  <button type="submit" name="button">Add</button>
+           </form>
+    </div>
+   
+</body>
+
+</html>
